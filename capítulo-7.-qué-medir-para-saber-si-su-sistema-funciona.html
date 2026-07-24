@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 7. Qué medir para saber si su sistema funciona | Libro Trading</title>
+  <meta name="description" content="Capítulo 7. Qué medir para saber si su sistema funciona | Libro Trading" />
+  <meta name="generator" content="bookdown 0.47 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 7. Qué medir para saber si su sistema funciona | Libro Trading" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 7. Qué medir para saber si su sistema funciona | Libro Trading" />
+  
+  
+  
+
+<meta name="author" content="John Rodríguez" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"/>
+<link rel="next" href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+<style type="text/css">
+  
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+</style>
+
+<link rel="stylesheet" href="estilo.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="index.html#section" id="toc-section"></a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html"><i class="fa fa-check"></i>Introducción</a>
+<ul>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#la-pregunta-de-este-cap%C3%ADtulo"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#el-dato-que-usted-ya-ha-le%C3%ADdo-cien-veces-dice-menos-y-peor-de-lo-que-parece"><i class="fa fa-check"></i>1. El dato que usted ya ha leído cien veces dice menos, y peor, de lo que parece</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#la-diferencia-entre-los-dos-grupos-casi-nunca-est%C3%A1-en-la-entrada"><i class="fa fa-check"></i>2. La diferencia entre los dos grupos casi nunca está en la entrada</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#la-cuenta-de-clara-dice-una-cosa-y-su-hoja-de-c%C3%A1lculo-dice-otra"><i class="fa fa-check"></i>3. La cuenta de Clara dice una cosa y su hoja de cálculo dice otra</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#tres-cosas-que-sabr%C3%A1-hacer-al-terminar"><i class="fa fa-check"></i>4. Tres cosas que sabrá hacer al terminar</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#seis-preguntas-antes-de-continuar"><i class="fa fa-check"></i>5. Seis preguntas antes de continuar</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#lo-que-este-libro-no-puede-hacer-por-usted"><i class="fa fa-check"></i>6. Lo que este libro no puede hacer por usted</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#cierre"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="introducción.html"><a href="introducción.html#puente"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><i class="fa fa-check"></i>Capítulo 1. Qué ocurre al otro lado de su orden</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#la-pregunta-de-este-cap%C3%ADtulo-1"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#recuadro-de-repaso"><i class="fa fa-check"></i>Recuadro de repaso</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#su-orden-no-va-al-mercado-va-a-un-agregador-que-decide-qu%C3%A9-mercado-ense%C3%B1arle"><i class="fa fa-check"></i>1. Su orden no va al mercado: va a un agregador que decide qué mercado enseñarle</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#la-forma-de-saber-qu%C3%A9-br%C3%B3ker-tiene-no-es-leer-su-folleto-es-medir-su-ejecuci%C3%B3n"><i class="fa fa-check"></i>2. La forma de saber qué bróker tiene no es leer su folleto, es medir su ejecución</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#el-coste-de-operar-no-se-mide-en-pips-se-mide-en-la-distancia-de-su-stop"><i class="fa fa-check"></i>3. El coste de operar no se mide en pips: se mide en la distancia de su stop</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#el-swap-convierte-a-un-trader-de-continuaci%C3%B3n-en-un-pagador-de-intereses"><i class="fa fa-check"></i>4. El swap convierte a un trader de continuación en un pagador de intereses</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#la-misma-estrategia-tiene-esperanzas-distintas-seg%C3%BAn-la-hora-a-la-que-se-ejecute"><i class="fa fa-check"></i>5. La misma estrategia tiene esperanzas distintas según la hora a la que se ejecute</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#tres-posiciones-al-1-no-son-un-riesgo-del-1"><i class="fa fa-check"></i>6. Tres posiciones al 1% no son un riesgo del 1%</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#el-error-caro-elegir-br%C3%B3ker-comparando-spreads"><i class="fa fa-check"></i>7. El error caro: elegir bróker comparando spreads</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#cierre-1"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#ejercicios"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html"><a href="capítulo-1.-qué-ocurre-al-otro-lado-de-su-orden.html#puente-1"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><i class="fa fa-check"></i>Capítulo 2. Cuánta evidencia hace falta para decir que usted tiene ventaja</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#la-pregunta-de-este-cap%C3%ADtulo-2"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#el-umbral-que-importa-no-es-la-tasa-de-acierto-es-la-tasa-de-acierto-de-equilibrio"><i class="fa fa-check"></i>1. El umbral que importa no es la tasa de acierto, es la tasa de acierto de equilibrio</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#su-ventaja-no-es-un-n%C3%BAmero-es-un-intervalo-y-probablemente-contiene-el-cero"><i class="fa fa-check"></i>2. Su ventaja no es un número, es un intervalo, y probablemente contiene el cero</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#el-sistema-que-m%C3%A1s-asusta-es-el-que-antes-se-demuestra"><i class="fa fa-check"></i>3. El sistema que más asusta es el que antes se demuestra</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#ocho-p%C3%A9rdidas-seguidas-no-son-una-se%C3%B1al-son-el-calendario"><i class="fa fa-check"></i>4. Ocho pérdidas seguidas no son una señal, son el calendario</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#usted-conoce-una-de-sus-tres-ventajas-y-no-es-la-que-determina-su-resultado"><i class="fa fa-check"></i>5. Usted conoce una de sus tres ventajas, y no es la que determina su resultado</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#si-prueba-doscientas-combinaciones-encontrar%C3%A1-una-excelente-aunque-ninguna-sirva"><i class="fa fa-check"></i>6. Si prueba doscientas combinaciones, encontrará una excelente aunque ninguna sirva</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#el-caso-clara-acertar-siete-de-cada-diez-veces-y-perder-dinero"><i class="fa fa-check"></i>7. El caso Clara: acertar siete de cada diez veces y perder dinero</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#el-error-caro-dimensionar-antes-de-haber-demostrado"><i class="fa fa-check"></i>8. El error caro: dimensionar antes de haber demostrado</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#cierre-2"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#ejercicios-1"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html"><a href="capítulo-2.-cuánta-evidencia-hace-falta-para-decir-que-usted-tiene-ventaja.html#puente-2"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><i class="fa fa-check"></i>Capítulo 3. Cuánto arriesgar cuando ya sabe dónde poner el stop</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#la-pregunta-de-este-cap%C3%ADtulo-3"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#el-valor-del-pip-no-son-diez-d%C3%B3lares-y-creer-que-s%C3%AD-le-est%C3%A1-costando-dinero"><i class="fa fa-check"></i>1. El valor del pip no son diez dólares, y creer que sí le está costando dinero</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#el-riesgo-por-operaci%C3%B3n-es-una-restricci%C3%B3n-local-la-que-arruina-cuentas-es-la-de-cartera"><i class="fa fa-check"></i>2. El riesgo por operación es una restricción local; la que arruina cuentas es la de cartera</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#los-l%C3%ADmites-de-p%C3%A9rdida-no-se-eligen-a-ojo-se-derivan-de-la-distribuci%C3%B3n-de-su-sistema-y-la-forma-del-sistema-decide-en-qu%C3%A9-unidad-tienen-sentido"><i class="fa fa-check"></i>3. Los límites de pérdida no se eligen a ojo: se derivan de la distribución de su sistema, y la forma del sistema decide en qué unidad tienen sentido</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#kelly-le-dice-que-arriesgue-el-571-y-hacerle-caso-ser%C3%ADa-un-error"><i class="fa fa-check"></i>4. Kelly le dice que arriesgue el 5,71%, y hacerle caso sería un error</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#el-riesgo-de-ruina-es-una-funci%C3%B3n-del-tama%C3%B1o-no-una-advertencia-moral"><i class="fa fa-check"></i>5. El riesgo de ruina es una función del tamaño, no una advertencia moral</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#su-stop-no-siempre-se-ejecuta-donde-usted-lo-puso"><i class="fa fa-check"></i>6. Su stop no siempre se ejecuta donde usted lo puso</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#tres-formas-de-dimensionar-y-ninguna-es-gratis"><i class="fa fa-check"></i>7. Tres formas de dimensionar, y ninguna es gratis</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#el-error-caro-mover-el-stop-una-vez-al-mes"><i class="fa fa-check"></i>8. El error caro: mover el stop una vez al mes</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#cierre-3"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#ejercicios-2"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html"><a href="capítulo-3.-cuánto-arriesgar-cuando-ya-sabe-dónde-poner-el-stop.html#puente-3"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><i class="fa fa-check"></i>Capítulo 4. Cómo distinguir una estrategia de una descripción del pasado</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#la-pregunta-de-este-cap%C3%ADtulo-4"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#sin-hip%C3%B3tesis-solo-hay-miner%C3%ADa-de-datos"><i class="fa fa-check"></i>1. Sin hipótesis solo hay minería de datos</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#el-protocolo-nueve-pasos-con-criterio-de-paso"><i class="fa fa-check"></i>2. El protocolo: nueve pasos con criterio de paso</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#pasos-1-a-3-la-hip%C3%B3tesis-las-reglas-y-los-datos"><i class="fa fa-check"></i>3. Pasos 1 a 3: la hipótesis, las reglas y los datos</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#paso-4-declare-la-ventaja-esperada-antes-de-mirar-o-el-criterio-se-lo-elige-usted"><i class="fa fa-check"></i>4. Paso 4: declare la ventaja esperada antes de mirar, o el criterio se lo elige usted</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#paso-5-reste-la-prima-de-ruido-y-mire-lo-que-queda"><i class="fa fa-check"></i>5. Paso 5: reste la prima de ruido y mire lo que queda</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#paso-6-walk-forward-y-por-qu%C3%A9-el-umbral-que-todo-el-mundo-usa-es-inalcanzable"><i class="fa fa-check"></i>6. Paso 6: walk-forward, y por qué el umbral que todo el mundo usa es inalcanzable</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#paso-7-robustez-con-umbrales-derivados-en-lugar-de-elegidos"><i class="fa fa-check"></i>7. Paso 7: robustez, con umbrales derivados en lugar de elegidos</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#paso-8-el-forward-test-no-valida-la-ventaja-valida-la-ejecuci%C3%B3n"><i class="fa fa-check"></i>8. Paso 8: el forward test no valida la ventaja, valida la ejecución</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#paso-9-el-criterio-de-muerte-se-escribe-antes-de-la-primera-operaci%C3%B3n"><i class="fa fa-check"></i>9. Paso 9: el criterio de muerte se escribe antes de la primera operación</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#el-error-caro-reoptimizar-despu%C3%A9s-de-una-mala-racha"><i class="fa fa-check"></i>10. El error caro: reoptimizar después de una mala racha</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#cierre-4"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#ejercicios-3"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html"><a href="capítulo-4.-cómo-distinguir-una-estrategia-de-una-descripción-del-pasado.html#puente-4"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><i class="fa fa-check"></i>Capítulo 5. El documento que decide por usted cuando usted no está en condiciones de decidir</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#la-pregunta-de-este-cap%C3%ADtulo-5"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#cuatro-capas-que-casi-todos-los-planes-mezclan"><i class="fa fa-check"></i>1. Cuatro capas que casi todos los planes mezclan</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#la-prueba-de-las-dos-personas"><i class="fa fa-check"></i>2. La prueba de las dos personas</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#los-l%C3%ADmites-por-qu%C3%A9-esos-n%C3%BAmeros-y-qu%C3%A9-cuestan-exactamente"><i class="fa fa-check"></i>3. Los límites: por qué esos números y qué cuestan exactamente</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#los-tres-checklists"><i class="fa fa-check"></i>4. Los tres checklists</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#el-protocolo-de-contingencia"><i class="fa fa-check"></i>5. El protocolo de contingencia</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#c%C3%B3mo-se-modifica-un-plan-sin-destruirlo"><i class="fa fa-check"></i>6. Cómo se modifica un plan sin destruirlo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#el-plan-de-mart%C3%ADn-versi%C3%B3n-3.0"><i class="fa fa-check"></i>7. El plan de Martín, versión 3.0</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#secci%C3%B3n-1.-estrategia"><i class="fa fa-check"></i>Sección 1. Estrategia</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#secci%C3%B3n-2.-gesti%C3%B3n"><i class="fa fa-check"></i>Sección 2. Gestión</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#secci%C3%B3n-3.-plan-operativo"><i class="fa fa-check"></i>Sección 3. Plan operativo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#secci%C3%B3n-4.-contingencia"><i class="fa fa-check"></i>Sección 4. Contingencia</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#secci%C3%B3n-5.-control-de-versiones"><i class="fa fa-check"></i>Sección 5. Control de versiones</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#el-error-caro-reescribir-el-plan-el-domingo"><i class="fa fa-check"></i>8. El error caro: reescribir el plan el domingo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#cierre-5"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#ejercicios-4"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html"><a href="capítulo-5.-el-documento-que-decide-por-usted-cuando-usted-no-está-en-condiciones-de-decidir.html#puente-5"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><i class="fa fa-check"></i>Capítulo 6. Por qué su plan deja de gobernarle exactamente cuando hace falta</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#la-pregunta-de-este-cap%C3%ADtulo-6"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#la-regla-de-este-cap%C3%ADtulo"><i class="fa fa-check"></i>1. La regla de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#seis-sesgos-con-predicci%C3%B3n-manifestaci%C3%B3n-y-m%C3%A9trica"><i class="fa fa-check"></i>2. Seis sesgos con predicción, manifestación y métrica</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#cu%C3%A1nto-cuesta-cada-sesgo-y-cu%C3%A1nto-de-eso-es-recuperable"><i class="fa fa-check"></i>3. Cuánto cuesta cada sesgo, y cuánto de eso es recuperable</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#la-semana-del-9-de-junio"><i class="fa fa-check"></i>4. La semana del 9 de junio</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#siete-mecanismos-y-cu%C3%A1ndo-cada-uno-se-vuelve-en-contra"><i class="fa fa-check"></i>5. Siete mecanismos, y cuándo cada uno se vuelve en contra</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#lo-que-este-cap%C3%ADtulo-no-puede-resolver"><i class="fa fa-check"></i>6. Lo que este capítulo no puede resolver</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#el-error-caro-el-refuerzo-intermitente"><i class="fa fa-check"></i>7. El error caro: el refuerzo intermitente</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#cierre-6"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#ejercicios-5"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html"><a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html#puente-6"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><i class="fa fa-check"></i>Capítulo 7. Qué medir para saber si su sistema funciona</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#la-pregunta-de-este-cap%C3%ADtulo-7"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#el-cuadro-de-mando"><i class="fa fa-check"></i>El cuadro de mando</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#tengo-ventaja"><i class="fa fa-check"></i>1. ¿Tengo ventaja?</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#qu%C3%A9-riesgo-pagu%C3%A9-por-esa-ventaja"><i class="fa fa-check"></i>2. ¿Qué riesgo pagué por esa ventaja?</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#es-estable"><i class="fa fa-check"></i>3. ¿Es estable?</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#ejecuto-lo-que-mido"><i class="fa fa-check"></i>4. ¿Ejecuto lo que mido?</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#de-d%C3%B3nde-viene-el-dinero-y-de-d%C3%B3nde-podr%C3%ADa-venir"><i class="fa fa-check"></i>5. ¿De dónde viene el dinero, y de dónde podría venir?</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#qu%C3%A9-debo-cambiar-y-cu%C3%A1ndo-puedo-decidirlo"><i class="fa fa-check"></i>6. ¿Qué debo cambiar, y cuándo puedo decidirlo?</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#el-desaf%C3%ADo-dos-cuentas-con-la-misma-rentabilidad"><i class="fa fa-check"></i>El desafío: dos cuentas con la misma rentabilidad</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#cierre-7"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#ejercicios-6"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html"><a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#puente-7"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><i class="fa fa-check"></i>Capítulo 8. Cuándo aumentar el tamaño ayuda y cuándo destruye la cuenta</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#la-pregunta-de-este-cap%C3%ADtulo-8"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#el-umbral-para-escalar-no-es-un-n%C3%BAmero-redondo"><i class="fa fa-check"></i>1. El umbral para escalar no es un número redondo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#tres-formas-de-escalar-sobre-la-misma-secuencia-de-operaciones"><i class="fa fa-check"></i>2. Tres formas de escalar sobre la misma secuencia de operaciones</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#el-capital-nuevo-no-trae-capacidad-nueva"><i class="fa fa-check"></i>3. El capital nuevo no trae capacidad nueva</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#el-desescalado-tiene-un-coste-y-hay-que-mirarlo-antes-de-adoptarlo"><i class="fa fa-check"></i>4. El desescalado tiene un coste, y hay que mirarlo antes de adoptarlo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#cuentas-de-fondeo-retiradas-y-separaci%C3%B3n-patrimonial"><i class="fa fa-check"></i>5. Cuentas de fondeo, retiradas y separación patrimonial</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#cierre-8"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#ejercicios-7"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html"><a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html#puente-8"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><i class="fa fa-check"></i>Capítulo 9. El camino del trader, y cómo saber si lleva a alguna parte</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#la-pregunta-de-este-cap%C3%ADtulo-9"><i class="fa fa-check"></i>La pregunta de este capítulo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#un-mapa-de-competencias-no-una-escalera-de-tiempo"><i class="fa fa-check"></i>1. Un mapa de competencias, no una escalera de tiempo</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#vivir-del-trading-es-un-problema-de-capital-no-de-habilidad"><i class="fa fa-check"></i>2. “Vivir del trading” es un problema de capital, no de habilidad</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#el-coste-de-oportunidad-con-los-n%C3%BAmeros-delante"><i class="fa fa-check"></i>3. El coste de oportunidad, con los números delante</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#cuatro-v%C3%ADas-y-qu%C3%A9-exige-de-verdad-cada-una"><i class="fa fa-check"></i>4. Cuatro vías, y qué exige de verdad cada una</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#cu%C3%A1ndo-abandonar"><i class="fa fa-check"></i>5. Cuándo abandonar</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#mart%C3%ADn-y-clara-dos-a%C3%B1os-despu%C3%A9s"><i class="fa fa-check"></i>6. Martín y Clara, dos años después</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#cierre-9"><i class="fa fa-check"></i>Cierre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#ejercicios-8"><i class="fa fa-check"></i>Ejercicios</a></li>
+<li class="chapter" data-level="" data-path="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html"><a href="capítulo-9.-el-camino-del-trader-y-cómo-saber-si-lleva-a-alguna-parte.html#puente-9"><i class="fa fa-check"></i>Puente</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><a href="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><i class="fa fa-check"></i>Capítulo 10. Conclusión: de buscar certeza a gestionar incertidumbre</a>
+<ul>
+<li class="chapter" data-level="" data-path="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><a href="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html#un-plan-de-noventa-d%C3%ADas"><i class="fa fa-check"></i>Un plan de noventa días</a></li>
+<li class="chapter" data-level="" data-path="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><a href="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html#la-%C3%BAnica-idea"><i class="fa fa-check"></i>La única idea</a></li>
+<li class="chapter" data-level="" data-path="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><a href="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html#lo-que-este-libro-no-cubre"><i class="fa fa-check"></i>Lo que este libro no cubre</a></li>
+<li class="chapter" data-level="" data-path="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><a href="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html#ocho-libros-para-seguir"><i class="fa fa-check"></i>Ocho libros para seguir</a></li>
+<li class="chapter" data-level="" data-path="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html"><a href="capítulo-10.-conclusión-de-buscar-certeza-a-gestionar-incertidumbre.html#%C3%BAltima-idea"><i class="fa fa-check"></i>Última idea</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Libro Trading</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona" class="section level1 hasAnchor">
+<h1>Capítulo 7. Qué medir para saber si su sistema funciona<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#cap%C3%ADtulo-7.-qu%C3%A9-medir-para-saber-si-su-sistema-funciona" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>El 30 de junio, Martín exporta su registro. Doscientas cuarenta operaciones, seis meses completos, la primera mitad del año.</p>
+<p>La cifra que mira primero es la única que casi todo el mundo mira: la cuenta empezó el año en 25.000 dólares y ahora tiene <strong>19.460</strong>. Ha perdido el 22,16%. Sabe que ha sido un mal semestre y no necesitaba el registro para saberlo.</p>
+<p>Lo que no sabe es nada de lo que importa. No sabe si su sistema ha dejado de funcionar o si atraviesa una racha normal. No sabe si esos 5.540 dólares se los llevó la estrategia o su forma de ejecutarla. No sabe si el drawdown que sufre es grande para su sistema o pequeño. No sabe si un cambio está justificado ni cuál. Y no sabe si la cifra de la que se lamenta contiene alguna información sobre el futuro.</p>
+<p>Este capítulo construye un cuadro de mando con esas doscientas cuarenta operaciones y responde a esas preguntas, en el orden en que hay que hacérselas. Todos los números que siguen salen del mismo conjunto de datos y cuadran entre sí; es un conjunto construido para el libro, no el extracto de una cuenta real, pero es internamente coherente, que es lo que se necesita para mostrar cómo se lee. Los resultados están expresados en múltiplos de R netos de coste, que es lo que la cuenta refleja. Y hay una complicación de unidad que conviene despachar ya: hasta abril, R valía 250 dólares porque Martín dimensionaba sobre 25.000; desde mayo, con el plan 3.0, vale 221,40. Las columnas en dólares lo incorporan.</p>
+<div id="la-pregunta-de-este-capítulo-7" class="section level2 hasAnchor">
+<h2>La pregunta de este capítulo<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#la-pregunta-de-este-cap%C3%ADtulo-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>¿Qué hay que medir para saber si un sistema funciona, y qué esconde cada una de las métricas que todo el mundo usa?</p>
+</div>
+<div id="el-cuadro-de-mando" class="section level2 hasAnchor">
+<h2>El cuadro de mando<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#el-cuadro-de-mando" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<table>
+<thead>
+<tr class="header">
+<th>Métrica</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Operaciones</td>
+<td>240</td>
+</tr>
+<tr class="even">
+<td>Capital inicial / final</td>
+<td>25.000 → 19.460 USD (−22,16%)</td>
+</tr>
+<tr class="odd">
+<td>Resultado total</td>
+<td>−23,40R</td>
+</tr>
+<tr class="even">
+<td>Esperanza neta por operación</td>
+<td><strong>−0,0975R</strong></td>
+</tr>
+<tr class="odd">
+<td>Desviación típica</td>
+<td>1,433R</td>
+</tr>
+<tr class="even">
+<td>Intervalo de confianza al 95%</td>
+<td>de −0,279R a +0,084R</td>
+</tr>
+<tr class="odd">
+<td>Operaciones ganadoras</td>
+<td>87 (36,2%), media +1,775R</td>
+</tr>
+<tr class="even">
+<td>Operaciones perdedoras</td>
+<td>153 (63,8%), media −1,162R</td>
+</tr>
+<tr class="odd">
+<td>Relación beneficio-riesgo realizada</td>
+<td>1,53</td>
+</tr>
+<tr class="even">
+<td>Factor de beneficio</td>
+<td>0,868</td>
+</tr>
+<tr class="odd">
+<td>Drawdown máximo</td>
+<td>29,80% (25.480 → 17.886 USD)</td>
+</tr>
+<tr class="even">
+<td>Duración del drawdown</td>
+<td>158 operaciones, unos 4 meses, sin recuperar</td>
+</tr>
+<tr class="odd">
+<td>Recuperación necesaria</td>
+<td>+42,46%</td>
+</tr>
+<tr class="even">
+<td>Tasa de cumplimiento</td>
+<td>86,2%</td>
+</tr>
+</tbody>
+</table>
+<p>Y el desglose mensual, que es donde empieza a verse algo:</p>
+<table style="width:100%;">
+<colgroup>
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+<col width="14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Mes</th>
+<th>Ops</th>
+<th>Cumplimiento</th>
+<th>Esperanza</th>
+<th>Total</th>
+<th>USD</th>
+<th>Capital al cierre</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enero</td>
+<td>40</td>
+<td>98%</td>
+<td>−0,0524R</td>
+<td>−2,10R</td>
+<td>−524</td>
+<td>24.476</td>
+</tr>
+<tr class="even">
+<td>Febrero</td>
+<td>40</td>
+<td>98%</td>
+<td>+0,0164R</td>
+<td>+0,65R</td>
+<td>+164</td>
+<td>24.640</td>
+</tr>
+<tr class="odd">
+<td>Marzo</td>
+<td>40</td>
+<td>75%</td>
+<td>−0,2380R</td>
+<td>−9,52R</td>
+<td>−2.380</td>
+<td>22.260</td>
+</tr>
+<tr class="even">
+<td>Abril</td>
+<td>40</td>
+<td>92%</td>
+<td>−0,0409R</td>
+<td>−1,63R</td>
+<td>−409</td>
+<td>21.851</td>
+</tr>
+<tr class="odd">
+<td>Mayo</td>
+<td>40</td>
+<td>95%</td>
+<td>+0,0709R</td>
+<td>+2,84R</td>
+<td>+628</td>
+<td>22.479</td>
+</tr>
+<tr class="even">
+<td>Junio</td>
+<td>40</td>
+<td>60%</td>
+<td>−0,3409R</td>
+<td>−13,64R</td>
+<td>−3.019</td>
+<td>19.460</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="tengo-ventaja" class="section level2 hasAnchor">
+<h2>1. ¿Tengo ventaja?<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#tengo-ventaja" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La esperanza neta de Martín es <strong>−0,0975R por operación</strong>. Es la métrica fundamental y la única que responde directamente a la pregunta, y responde que no: en estas 240 operaciones perdió unos diez céntimos de R cada vez que operó.</p>
+<p>Pero la cifra sola no basta, y aquí está la primera lección del capítulo. Con una desviación típica de 1,433R sobre 240 operaciones, el error estándar es 0,0925R y el intervalo de confianza al 95% va de <strong>−0,279R a +0,084R</strong>. Ese intervalo <strong>incluye el cero</strong>. Traducido: seis meses de operativa y doscientas cuarenta operaciones no bastan para afirmar que su sistema pierde dinero. Son compatibles con un sistema que pierde 0,28R por operación y con uno que gana 0,08R.</p>
+<p>Esto no es un consuelo. Es una restricción sobre lo que puede concluir, y funciona en las dos direcciones: le impide afirmar que su sistema está roto, y le habría impedido igualmente afirmar que funcionaba si el semestre hubiera salido bien. El capítulo 2 calculó que para demostrar la ventaja de 0,100R que su sistema tiene cuando lo ejecuta bien harían falta unas 700 operaciones, y él lleva 240.</p>
+<p><strong>El factor de beneficio</strong> es la suma de las ganancias dividida entre la suma de las pérdidas en valor absoluto. Aquí vale <strong>0,868</strong>: por cada dólar perdido recuperó ochenta y siete céntimos. Es una métrica cómoda porque tiene un umbral obvio en 1,0, y esconde exactamente lo mismo que la esperanza: nada dice sobre el tamaño de la muestra. Un factor de beneficio de 1,8 sobre treinta operaciones no significa más que uno de 1,05 sobre mil; significa bastante menos. Y tiene un defecto adicional: es muy sensible a una sola operación grande. Quitando la mejor operación de Martín, su factor de beneficio cae por debajo de 0,84.</p>
+<p><strong>La tasa de acierto</strong> es del 36,2%. Por sí sola no dice nada, y el capítulo 2 ya lo demostró: solo tiene sentido comparada con la relación beneficio-riesgo, que aquí es de 1,53, lo que sitúa el umbral de equilibrio en 1/(1+1,53) = 39,5%. Martín acierta el 36,2% y necesita el 39,5%. Le faltan 3,3 puntos, y ahí está su déficit expresado en la unidad más intuitiva de todas.</p>
+<p><strong>Lo que las tres ocultan a la vez:</strong> ninguna distingue entre lo que hizo el sistema y lo que hizo Martín. Las tres describen el resultado de un conjunto de operaciones sin preguntar de dónde salieron. Esa distinción es la sección 4 y es la más importante del capítulo.</p>
+<p>Y una advertencia sobre la métrica que no aparece en este cuadro de mando y aparece en casi todos los demás: la <strong>rentabilidad porcentual</strong>. Martín perdió el 22,16%. Esa cifra depende de tres cosas a la vez —la esperanza del sistema, el riesgo por operación y el número de operaciones— y no permite separarlas. Dos operadores con la misma rentabilidad pueden tener sistemas completamente distintos, y dos operadores con el mismo sistema pueden tener rentabilidades muy distintas según cuánto arriesguen. La rentabilidad es el producto final, útil para saber cuánto dinero hay en la cuenta e inútil para decidir nada. El desafío del final del capítulo está construido precisamente sobre ese punto.</p>
+</div>
+<div id="qué-riesgo-pagué-por-esa-ventaja" class="section level2 hasAnchor">
+<h2>2. ¿Qué riesgo pagué por esa ventaja?<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#qu%C3%A9-riesgo-pagu%C3%A9-por-esa-ventaja" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Un resultado no se juzga solo; se juzga contra el riesgo que costó obtenerlo. Y aquí la métrica habitual, el drawdown máximo, es un punto único de una distribución entera y se cita como si fuera una propiedad del sistema.</p>
+<p>El drawdown máximo de Martín es del <strong>29,80%</strong>: la cuenta llegó a 25.480 dólares y cayó hasta 17.886. Para volver al máximo anterior necesita ganar un <strong>42,46%</strong>, por la asimetría que el capítulo 2 desarrolló.</p>
+<p>Pero la profundidad es la mitad de la información, y casi siempre se publica sola. La otra mitad es la <strong>duración</strong>: el máximo se alcanzó en la operación 82, a principios de marzo, y a 30 de junio, 158 operaciones después, <strong>no se ha recuperado</strong>. Son cuatro meses bajo el agua y contando. Dos sistemas con el mismo drawdown del 30% son cosas completamente distintas si uno lo recupera en tres semanas y el otro lleva cuatro meses sin hacerlo, porque lo que agota a un operador no es la profundidad sino el tiempo, y porque un drawdown largo consume la muestra que se necesitaba para validar.</p>
+<p>Hay una tercera cosa que el drawdown máximo esconde por construcción: <strong>es un solo punto de una distribución entera</strong>. Un semestre no tiene un drawdown, tiene decenas, y el máximo es simplemente el mayor de ellos, es decir, el valor extremo de una muestra. Como cualquier extremo muestral, crece con el número de observaciones: cuanto más tiempo opere, mayor será su drawdown máximo histórico aunque su sistema no cambie en absoluto. Comparar el drawdown máximo de una cuenta con seis meses de historial con el de otra con cinco años no compara sistemas, compara duraciones. Lo que sí se puede comparar es la distribución completa: cuántos drawdowns superaron el 5%, cuántos el 10%, cuánto duró cada uno. Esa tabla no la publica casi nadie y es la única que permite decir si el episodio actual es normal para el sistema.</p>
+<p><strong>La distribución de resultados</strong> dice más que cualquier promedio:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Resultado</th>
+<th>Operaciones</th>
+<th>Porcentaje</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Peor de −2,5R</td>
+<td>0</td>
+<td>0,0%</td>
+</tr>
+<tr class="even">
+<td>Entre −2,5R y −1,5R</td>
+<td>25</td>
+<td>10,4%</td>
+</tr>
+<tr class="odd">
+<td>Entre −1,5R y 0</td>
+<td>128</td>
+<td>53,3%</td>
+</tr>
+<tr class="even">
+<td>Entre 0 y +1,5R</td>
+<td>0</td>
+<td>0,0%</td>
+</tr>
+<tr class="odd">
+<td>Entre +1,5R y +2,5R</td>
+<td>79</td>
+<td>32,9%</td>
+</tr>
+<tr class="even">
+<td>Mejor de +2,5R</td>
+<td>8</td>
+<td>3,3%</td>
+</tr>
+</tbody>
+</table>
+<p>Fíjese en las dos filas con cero. La distribución es <strong>bimodal</strong>: hay un grupo de pérdidas alrededor de −1,07R y otro de ganancias alrededor de +1,68R, y prácticamente nada en medio. Es lo que produce un sistema con stop y objetivo fijos, y tiene una consecuencia técnica que conviene retener: <strong>cualquier métrica que suponga normalidad está mal aplicada aquí</strong>. El ratio de Sharpe y sus variantes dividen un exceso de rentabilidad entre una desviación típica, y esa operación describe bien una distribución acampanada y describe mal una que tiene dos jorobas y un agujero en el centro. Si aun así se calcula, el cociente entre esperanza y desviación típica de Martín es −0,068 por operación, que anualizado sobre 480 operaciones da −1,49. El número existe; lo que no existe es la interpretación habitual, porque la desviación típica de una distribución bimodal no mide el riesgo que el operador percibe.</p>
+<p>Las filas de −2,5R también merecen atención: hay 25 operaciones que perdieron más de 1,5R en un sistema donde una pérdida debería valer 1R. Esas 25 son la huella de los tamaños aumentados y de los stops ampliados, y aparecen en la distribución antes de que ninguna otra métrica las señale.</p>
+</div>
+<div id="es-estable" class="section level2 hasAnchor">
+<h2>3. ¿Es estable?<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#es-estable" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Una esperanza medida sobre seis meses puede ser el promedio de seis meses parecidos o el promedio de tres buenos y tres malos, y esas dos situaciones exigen decisiones distintas.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Mes</th>
+<th>Esperanza</th>
+<th>Intervalo al 95%</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Enero</td>
+<td>−0,0524R</td>
+<td>de −0,469R a +0,365R</td>
+</tr>
+<tr class="even">
+<td>Febrero</td>
+<td>+0,0164R</td>
+<td>de −0,406R a +0,438R</td>
+</tr>
+<tr class="odd">
+<td>Marzo</td>
+<td>−0,2380R</td>
+<td>de −0,694R a +0,218R</td>
+</tr>
+<tr class="even">
+<td>Abril</td>
+<td>−0,0409R</td>
+<td>de −0,475R a +0,393R</td>
+</tr>
+<tr class="odd">
+<td>Mayo</td>
+<td>+0,0709R</td>
+<td>de −0,360R a +0,501R</td>
+</tr>
+<tr class="even">
+<td>Junio</td>
+<td>−0,3409R</td>
+<td>de −0,829R a +0,147R</td>
+</tr>
+</tbody>
+</table>
+<p>Los seis intervalos incluyen el cero. Con cuarenta operaciones mensuales, el intervalo mide más de ochocientas milésimas de R de extremo a extremo, de modo que <strong>ningún mes individual contiene información utilizable</strong>. La diferencia entre el mejor mes y el peor, de +0,071R a −0,341R, parece enorme y es perfectamente compatible con que los seis procedan de la misma distribución.</p>
+<p>Esa es la razón estadística por la que un informe mensual no debe generar decisiones sobre el sistema, y conecta con la regla de congelación del capítulo 5. Si mira sus resultados cada mes y decide en función de ellos, decidirá siguiendo ruido doce veces al año.</p>
+<p><strong>La concentración</strong> responde a una pregunta distinta: ¿de cuántas operaciones depende el resultado?</p>
+<table>
+<thead>
+<tr class="header">
+<th>Escenario</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Las 240 operaciones</td>
+<td>−23,40R</td>
+</tr>
+<tr class="even">
+<td>Quitando las 3 mejores</td>
+<td>−31,53R</td>
+</tr>
+<tr class="odd">
+<td>Quitando las 5 mejores</td>
+<td>−36,95R</td>
+</tr>
+<tr class="even">
+<td>Quitando las 10 mejores</td>
+<td>−48,45R</td>
+</tr>
+</tbody>
+</table>
+<p>En un semestre perdedor esta tabla dice algo poco intuitivo: sus cinco mejores operaciones aportaron 13,56R, un 8,8% del beneficio bruto, lo que indica una concentración <strong>baja</strong>. Eso es una buena noticia sobre la forma del sistema, no sobre su resultado: significa que la pérdida no viene de haberse perdido unas pocas operaciones excepcionales, sino de un déficit repartido. Un sistema cuyo resultado depende de tres operaciones tiene un problema de muestra mucho peor que uno cuyo resultado se reparte, aunque los dos hayan perdido lo mismo.</p>
+</div>
+<div id="ejecuto-lo-que-mido" class="section level2 hasAnchor">
+<h2>4. ¿Ejecuto lo que mido?<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#ejecuto-lo-que-mido" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Esta es la sección que justifica el capítulo entero, y solo es posible porque Martín marca cada operación como conforme o no conforme <strong>antes</strong> de conocer el resultado.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Grupo</th>
+<th>Operaciones</th>
+<th>Porcentaje</th>
+<th>Esperanza</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conformes al plan</td>
+<td>207</td>
+<td>86,2%</td>
+<td>−0,0199R</td>
+<td>−4,12R</td>
+</tr>
+<tr class="even">
+<td>No conformes</td>
+<td>33</td>
+<td>13,8%</td>
+<td>−0,5843R</td>
+<td><strong>−19,28R</strong></td>
+</tr>
+<tr class="odd">
+<td>Conjunto</td>
+<td>240</td>
+<td>100%</td>
+<td>−0,0975R</td>
+<td>−23,40R</td>
+</tr>
+</tbody>
+</table>
+<p>Las 33 operaciones que incumplieron el plan, el 13,8% del total, produjeron el <strong>82% de la pérdida del semestre</strong>. Sin ellas, el semestre habría cerrado en −4,12R, unos mil dólares, en lugar de −23,40R, cinco mil quinientos.</p>
+<p>La diferencia de esperanza entre los dos grupos es de 0,5644R por operación. Multiplicada por las 33 operaciones no conformes, el coste de la no conformidad asciende a <strong>18,62R</strong>. En dólares hay que tener cuidado con la unidad: 18 de esas 33 operaciones son posteriores al cambio de R a 221,40 y las otras 15 anteriores, a 250, de modo que el coste ronda los <strong>4.300 dólares</strong> y no se puede dar como cifra exacta sin recorrer operación por operación. Aun con esa imprecisión, es con diferencia la partida más grande del cuadro de mando, y no aparece en ninguna métrica de las que se publican habitualmente.</p>
+<p>Mire ahora la columna de cumplimiento del desglose mensual junto a la de resultado. Enero y febrero: 98% de cumplimiento, resultado casi plano. Marzo: 75%, −9,52R. Junio: 60%, −13,64R. Los dos peores meses del semestre son los dos meses en que Martín ejecutó peor su plan, y en junio uno de cada dos días operó fuera de él. <strong>La correlación no demuestra causalidad y aquí el mecanismo es conocido</strong>: son los meses del stop ampliado del 12 de marzo y de la semana del 9 de junio, ambos narrados en capítulos anteriores con sus operaciones concretas.</p>
+<p>Lo que esta tabla permite decir, y ninguna otra permitía, es que el sistema de Martín no ha demostrado estar roto. Lo que está roto es la ejecución, y esa es una avería distinta con una reparación distinta. Su esperanza conforme, −0,0199R, es negativa, pero conviene reconciliarla con el +0,100R que el capítulo 2 atribuyó a su sistema en plan: aquel era un valor <strong>bruto</strong>, y restándole el coste de 0,069R queda +0,031R, que con el error estándar de estas 207 operaciones conformes, de unos 0,10R, cae dentro de un intervalo que va de −0,17R a +0,23R. En otras palabras, el −0,0199R observado es perfectamente compatible con un sistema cuya esperanza neta verdadera sea ligeramente positiva y que simplemente haya atravesado un semestre por debajo de su media. No es prueba de que el sistema funcione; es la constatación de que estos seis meses no bastan para saberlo, mientras que su esperanza no conforme, −0,5843R, no cae dentro de ningún intervalo tolerable.</p>
+</div>
+<div id="de-dónde-viene-el-dinero-y-de-dónde-podría-venir" class="section level2 hasAnchor">
+<h2>5. ¿De dónde viene el dinero, y de dónde podría venir?<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#de-d%C3%B3nde-viene-el-dinero-y-de-d%C3%B3nde-podr%C3%ADa-venir" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dos campos del registro que casi nadie anota permiten calibrar stops y objetivos sin cambiar nada más: la excursión máxima adversa, que es lo más en contra que fue una operación antes de terminar, y la excursión máxima favorable, que es lo más a favor.</p>
+<p><strong>En las operaciones ganadoras, la excursión adversa media fue de −0,348R, y el 95% de ellas nunca bajó de −0,647R.</strong> Dicho de otro modo: casi ninguna operación que acabó ganando llegó a usar los 1,0R completos de stop que Martín les concede. Eso plantea una hipótesis, no una solución: quizá un stop más corto conservaría la mayoría de las ganadoras reduciendo el tamaño de cada pérdida. Y como toda hipótesis, hay que examinarla antes de creerla.</p>
+<p>Antes de que suene a solución, la advertencia. Acortar el stop no solo reduce el tamaño de las pérdidas: convierte en perdedoras algunas operaciones que hoy ganan, precisamente ese 5% cuya excursión adversa bajó de −0,647R, y además <strong>encarece cada operación en unidades de riesgo</strong>, porque el capítulo 1 estableció que el coste es la fricción dividida entre la distancia del stop. Con un stop de 0,70R, es decir 21 pips en lugar de 30, el coste pasa de 1,8/30 = 0,060R a 1,8/21 = <strong>0,086R</strong> por operación, un 43% más. Sobre 480 operaciones anuales, ese encarecimiento son 12,5R adicionales. Es un experimento con dos efectos de signo contrario que solo puede resolverse midiendo, y el procedimiento para hacerlo sin destruir la muestra es el del capítulo 4.</p>
+<p><strong>En las operaciones perdedoras, la excursión favorable media fue de +0,469R, y el 41,8% de ellas llegó a superar +0,5R antes de acabar perdiendo.</strong> Ese dato es la tentación más peligrosa del registro, porque sugiere una regla de asegurar beneficio parcial que parece dinero gratis. No lo es: mover el stop a la entrada cuando el precio alcanza +0,5R también saca de sus posiciones ganadoras a todas aquellas que retrocedieron hasta ese punto antes de continuar, y la excursión adversa media de las ganadoras, −0,348R, indica que muchas lo hacen. Los dos números hay que leerlos juntos o no leerlos.</p>
+<p><strong>El desglose por sesión</strong> responde a la misma pregunta desde otro ángulo y aquí produce el hallazgo más accionable del semestre. De las 240 operaciones, 168 se ejecutaron en las sesiones europea y americana y 72 en la asiática, que Martín sigue operando con órdenes pendientes desde que el capítulo 1 planteó el asunto y él decidió no retirarlas.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Sesión</th>
+<th>Operaciones</th>
+<th>Esperanza</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Europa y Norteamérica</td>
+<td>168</td>
+<td>−0,044R</td>
+<td>−7,41R</td>
+</tr>
+<tr class="even">
+<td>Asia</td>
+<td>72</td>
+<td>−0,222R</td>
+<td>−15,98R</td>
+</tr>
+<tr class="odd">
+<td>Conjunto</td>
+<td>240</td>
+<td>−0,098R</td>
+<td>−23,40R</td>
+</tr>
+</tbody>
+</table>
+<p>Las 72 operaciones asiáticas, el 30% del total, produjeron el <strong>68% de la pérdida</strong>. El capítulo 1 anticipó el mecanismo con una razón estructural previa a los datos: el recorrido medio de la sesión asiática es de unos 22 pips y su stop de 30 pips equivale al 136% de ese recorrido, de modo que el objetivo rara vez se alcanza mientras el coste se paga íntegro. Aquella advertencia sobre dividir muestras a posteriori sigue vigente y el intervalo de estas 72 operaciones es ancho; lo que cambia el caso es que la hipótesis existía antes de mirar y ahora los datos son consistentes con ella. Ese cruce, mecanismo previo más dato posterior, es la única situación en la que un filtro está justificado.</p>
+<p>Conviene una advertencia sobre estas dos tablas, la de conformidad y la de sesión, porque miden cosas que se solapan: de las 33 operaciones no conformes, 20 se ejecutaron en la sesión asiática, de madrugada, cuando Martín deja correr órdenes que luego gestiona mal. Las dos tablas describen en parte a las mismas operaciones, de modo que <strong>sus costes no se suman</strong>: no son 18,62R por conformidad más 15,98R por sesión, porque una operación no conforme de madrugada aparece en ambas. Son dos cortes distintos del mismo problema, y el problema, mirado por cualquiera de los dos lados, apunta a las mismas horas y a las mismas decisiones.</p>
+</div>
+<div id="qué-debo-cambiar-y-cuándo-puedo-decidirlo" class="section level2 hasAnchor">
+<h2>6. ¿Qué debo cambiar, y cuándo puedo decidirlo?<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#qu%C3%A9-debo-cambiar-y-cu%C3%A1ndo-puedo-decidirlo" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>La regla central de esta sección invierte la intuición: <strong>la frecuencia con la que uno revisa debe ser inversa a la frecuencia con la que uno quiere tocar el sistema</strong>. Quien siente el impulso de ajustar necesita mirar menos, no más, porque cada mirada es una oportunidad de decidir con ruido.</p>
+<table>
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Periodo</th>
+<th>Qué se mira</th>
+<th>Qué decisión permite</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cada día</td>
+<td>Nada del resultado. Solo el checklist de cierre: señales generadas frente a tomadas, deslizamiento, operaciones no conformes con su motivo</td>
+<td>Ninguna sobre el sistema. Solo corregir errores de ejecución del día siguiente</td>
+</tr>
+<tr class="even">
+<td>Cada semana</td>
+<td>Resultado en R, cumplimiento, coste medio, riesgo efectivo máximo, distancia al límite mensual</td>
+<td>Ninguna sobre el sistema. Activar o desactivar los cortes previstos en el plan</td>
+</tr>
+<tr class="odd">
+<td>Cada mes</td>
+<td>Esperanza del mes con su intervalo, drawdown y su duración, distribución, concentración, desglose por cumplimiento</td>
+<td>Reducir tamaño si se cruzó el umbral. Nada más</td>
+</tr>
+<tr class="even">
+<td>Cada trimestre</td>
+<td>Todo el cuadro de mando sobre la muestra acumulada, estabilidad temporal, MAE y MFE</td>
+<td>Proponer un cambio, someterlo al protocolo del capítulo 4 y, si procede, aplicarlo con la congelación del capítulo 5</td>
+</tr>
+</tbody>
+</table>
+<p>La columna de la derecha es la que importa y es deliberadamente pobre. En las revisiones diaria y semanal <strong>no se puede decidir nada sobre el sistema</strong>, y decirlo así evita la ficción de que mirar sirve para algo. La única decisión mensual es de tamaño, que es reversible. Y la única revisión que puede cambiar reglas es la trimestral, que sobre 120 operaciones sigue teniendo un intervalo de ±0,26R y por tanto solo detecta desviaciones enormes.</p>
+<p>Aplicado al caso: en la revisión del 30 de junio, Martín no puede concluir que su sistema esté roto, porque su intervalo incluye el cero. Sí puede concluir dos cosas que no dependen de la esperanza. La primera, que su tasa de cumplimiento cayó del 98% al 60% en cuatro meses y que las operaciones no conformes explican el 82% de la pérdida; eso está medido y no requiere más muestra. La segunda, que su drawdown lleva cuatro meses sin recuperarse, lo que activa el disparador de reducción de tamaño de su propio plan. <strong>Ninguna de las dos decisiones toca una sola regla de la estrategia.</strong></p>
+</div>
+<div id="el-desafío-dos-cuentas-con-la-misma-rentabilidad" class="section level2 hasAnchor">
+<h2>El desafío: dos cuentas con la misma rentabilidad<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#el-desaf%C3%ADo-dos-cuentas-con-la-misma-rentabilidad" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Dos operadores le presentan sus resultados del año. Los dos han obtenido exactamente el mismo rendimiento: <strong>+18%</strong>. Tiene que decidir a cuál confiaría capital.</p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Cuenta A</th>
+<th>Cuenta B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Rentabilidad anual</td>
+<td>+18%</td>
+<td>+18%</td>
+</tr>
+<tr class="even">
+<td>Operaciones</td>
+<td>400</td>
+<td>60</td>
+</tr>
+<tr class="odd">
+<td>Riesgo por operación</td>
+<td>0,5%</td>
+<td>2,0%</td>
+</tr>
+<tr class="even">
+<td>Resultado en R</td>
+<td>+36R</td>
+<td>+9R</td>
+</tr>
+<tr class="odd">
+<td>Esperanza por operación</td>
+<td>+0,090R</td>
+<td>+0,150R</td>
+</tr>
+<tr class="even">
+<td>Desviación típica</td>
+<td>0,80R</td>
+<td>2,50R</td>
+</tr>
+<tr class="odd">
+<td>Drawdown máximo</td>
+<td>9%</td>
+<td>31%</td>
+</tr>
+<tr class="even">
+<td>Duración del drawdown</td>
+<td>2 meses</td>
+<td>8 meses</td>
+</tr>
+<tr class="odd">
+<td>Peso de las 5 mejores operaciones</td>
+<td>22% del beneficio bruto</td>
+<td>91%</td>
+</tr>
+<tr class="even">
+<td>Tasa de cumplimiento</td>
+<td>94%</td>
+<td>55%</td>
+</tr>
+</tbody>
+</table>
+<p>Antes de leer la respuesta, decida. Y note que la métrica que casi todo el mundo usaría, la esperanza por operación, favorece a B: 0,150R frente a 0,090R.</p>
+<p>La respuesta es <strong>A, y no está cerca</strong>. Tres cálculos lo deciden.</p>
+<p>El primero es el intervalo de confianza. Para A: 1,96 × 0,80 / √400 = ±0,078, lo que da un intervalo de <strong>+0,012R a +0,168R</strong>, que excluye el cero. Para B: 1,96 × 2,50 / √60 = ±0,633, lo que da <strong>−0,483R a +0,783R</strong>, que lo incluye con holgura. A ha demostrado tener ventaja; B ha obtenido un resultado indistinguible de la suerte.</p>
+<p>El segundo es la concentración. Las cinco mejores operaciones de A suman 13,2R, el 22% de su beneficio bruto: quitándolas, A pasa de +36R a <strong>+22,8R</strong> y sigue siendo claramente rentable. Las cinco mejores de B suman 27,3R, el 91% de su beneficio bruto: quitándolas, B pasa de +9R a <strong>−18,3R</strong>. Dicho de otro modo, todo el resultado positivo de B depende de cinco operaciones; las otras cincuenta y cinco, en conjunto, pierden dinero.</p>
+<p>El tercero es el drawdown y su duración. El 9% de A exige un 9,89% para recuperarse y se recuperó en dos meses. El 31% de B exige un <strong>44,93%</strong> y tardó ocho. Un operador que atraviesa ocho meses bajo el agua con una ventaja no demostrada tomará decisiones que ninguna hoja de cálculo predice, y el 55% de cumplimiento sugiere que ya las está tomando.</p>
+<p>La intuición falla aquí porque <strong>la rentabilidad es un resultado y no una medida de la calidad del proceso</strong>. Las dos cuentas tienen el mismo resultado y una diferencia enorme en todo lo demás. Y hay un cuarto punto que conviene añadir con cuidado: A arriesga el 0,5% por operación y B el 2%, cuatro veces más, de modo que la comparación de rentabilidades entre las dos no significa casi nada, porque una parte del 18% de B viene de arriesgar más y no de operar mejor. Lo que <strong>no</strong> se puede hacer es la cuenta lineal: sería falso decir que A “podría” sacar un 72% subiendo su riesgo al de B, porque cuadruplicar el riesgo por operación cuadruplica la esperanza pero dispara el drawdown y la probabilidad de ruina de forma no lineal, como demostró el capítulo 3. El 9% de drawdown de A se convertiría en algo cercano al 36%, y su ruina dejaría de ser despreciable. La conclusión correcta es más modesta: comparar rentabilidades entre cuentas con distinto riesgo por operación no informa de nada sobre cuál sistema es mejor.</p>
+</div>
+<div id="cierre-7" class="section level2 hasAnchor">
+<h2>Cierre<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#cierre-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>El resultado de una cuenta es la última cosa que hay que mirar y la primera que todo el mundo mira. Antes que él van seis preguntas: si la ventaja existe, y para eso hace falta un intervalo y no un promedio; qué riesgo costó, y para eso hace falta la duración del drawdown y no solo su profundidad; si es estable, y para eso hacen falta los intervalos mensuales, que en el caso de Martín incluyen todos el cero; si se ejecuta lo que se mide, que es donde aparecen los 4.377 dólares que las demás métricas no ven; de dónde viene el dinero, que se responde con dos campos que casi nadie anota; y qué se puede decidir en cada revisión, que casi siempre es nada. Martín perdió 5.540 dólares en seis meses y su registro dice que su sistema no ha demostrado estar roto, que su ejecución sí, y que la reparación no toca una sola regla de la estrategia.</p>
+</div>
+<div id="ejercicios-6" class="section level2 hasAnchor">
+<h2>Ejercicios<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#ejercicios-6" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Ejercicio 1. Construya su cuadro de mando.</strong> Con su registro, calcule las catorce filas de la tabla del principio de este capítulo. Criterio de éxito: catorce valores, y la comprobación de que cuadran entre sí, es decir, que la esperanza multiplicada por el número de operaciones y por su unidad de riesgo reproduce la variación de su capital. Si no cuadra, el registro tiene huecos y todo lo demás sobra hasta arreglarlo.</p>
+<p><strong>Ejercicio 2. Separe sus resultados por conformidad y compare las dos esperanzas.</strong> Criterio de éxito: dos cifras y la diferencia entre ellas multiplicada por el número de operaciones no conformes. Ese producto es lo que le cuesta su ejecución, en su moneda. Si no tiene la columna de conformidad marcada antes del resultado, empiece hoy y repita el ejercicio dentro de cien operaciones; retroactivamente no sirve, porque la memoria reclasifica.</p>
+<p><strong>Ejercicio 3. Mida la duración de su peor drawdown, no solo su profundidad.</strong> Localice su máximo histórico de capital, el mínimo posterior y la fecha en que volvió a superar aquel máximo. Criterio de éxito: tres fechas, un porcentaje de caída, el porcentaje de subida necesario para recuperarlo y un número de días. Si todavía no lo ha recuperado, la respuesta es el número de días transcurridos y sigue creciendo mientras usted lee.</p>
+</div>
+<div id="puente-7" class="section level2 hasAnchor">
+<h2>Puente<a href="capítulo-7.-qué-medir-para-saber-si-su-sistema-funciona.html#puente-7" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Martín termina el semestre con 19.460 dólares, un cuadro de mando completo y un diagnóstico que por primera vez distingue el sistema de quien lo opera. Sabe que no puede tocar sus reglas, sabe que su problema está en el 13,8% de operaciones que las incumplen y sabe qué disparadores de su plan están activados. Lo que no tiene es la pregunta siguiente resuelta, y es la que aparece en cuanto un semestre sale bien en lugar de mal: si el sistema empieza a funcionar y la cuenta crece, ¿cuánto y con qué criterio se aumenta el tamaño? Es una pregunta simétrica a la del capítulo 3 y con una trampa propia, porque aumentar después de ganar se siente prudente y casi nunca lo es.</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="capítulo-6.-por-qué-su-plan-deja-de-gobernarle-exactamente-cuando-hace-falta.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="capítulo-8.-cuándo-aumentar-el-tamaño-ayuda-y-cuándo-destruye-la-cuenta.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+  "sharing": null,
+  "fontsettings": {
+    "theme": "white",
+    "family": "sans",
+    "size": 2
+  },
+  "edit": {
+    "link": null,
+    "text": null
+  },
+  "history": {
+    "link": null,
+    "text": null
+  },
+  "view": {
+    "link": null,
+    "text": null
+  },
+  "download": null,
+  "search": {
+    "engine": "fuse",
+    "options": null
+  },
+  "toc": {
+    "collapse": "subsection"
+  },
+  "themes": {
+    "theme": "united",
+    "edit": null,
+    "history": null
+  }
+});
+});
+</script>
+
+</body>
+
+</html>
